@@ -1,11 +1,22 @@
 import { Component } from '@angular/core';
 
 @Component({
+  selector: 'app-user',
+  template: `
+    USername: {{username}}
+  `,
+})
+
+export class UserComponent {
+  username = 'John Doe';
+}
+
+@Component({
   selector: 'app-root',
-  templateUrl: './app.component.html', // Component template dạng URL
-  styleUrl: './app.component.css' // Component style dạng URL
+  templateUrl: './app.component.html', 
+  styleUrl: './app.component.css', 
+  imports: [UserComponent]
 })
 export class AppComponent {
-  title = 'new-app';
-  username = 'Le Khoa'
+
 }
