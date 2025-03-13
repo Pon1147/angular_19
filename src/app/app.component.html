@@ -1,12 +1,27 @@
-@for (user of users; track user.id) {
-    <p>{{user.id}}.{{user.name}}</p> 
-}
-<!-- Control Flow in Components - @for -->
+<p>
+    Example:
+</p>
+<img [src]="imgUrl" alt="img_1" class="img">
 
-<!-- QThông thường khi xây dựng các ứng dụng web, 
- bạn cần lặp lại một số mã một số lần cụ thể - 
- ví dụ: đưa ra một mảng tên, bạn có thể muốn hiển thị 
- từng tên trong thẻ <p>.
+<p>
+    Example 2: 
+</p>
 
-Trong hoạt động này, bạn sẽ học cách 
-sử dụng @for để lặp lại các yếu tố trong một mẫu. -->
+<div [contentEditable]="isEditTable">
+</div>
+<!-- Property Binding in Angular -->
+
+<!--Property Binding là một tính năng của Angular 
+cho phép bạn đặt giá trị động cho các thuộc tính (properties) 
+của các phần tử HTML, các thành phần (components) trong Angular,
+hoặc thậm chí là các thuộc tính khác. 
+Nó giúp bạn điều khiển giao diện hoặc hành vi của 
+ứng dụng một cách linh hoạt dựa trên dữ liệu từ mã nguồn (code).
+
+Nói đơn giản, thay vì gán giá trị tĩnh (ví dụ: src="ảnh.jpg"), 
+bạn có thể liên kết thuộc tính đó với một biến 
+trong mã TypeScript, và giá trị của biến sẽ được cập nhật 
+tự động vào giao diện.
+
+Trong hoạt động này, bạn sẽ học cách sử dụng liên 
+kết thuộc tính trong các mẫu. -->
