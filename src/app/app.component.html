@@ -1,16 +1,17 @@
-<section>
-    <app-user></app-user>
-</section>
-<!-- Composing Components -->
+@if (isLoggedIn) {
+    <p>Welcom, Friend. The server is running now</p>
+} @else {
+    <p>Please log in to see the server status</p>
+}
+<!-- Control Flow in Components - @if -->
 
-<!-- Bạn đã học cách cập nhật mẫu thành phần, 
-logic thành phần và kiểu thành phần, nhưng làm thế nào 
-để bạn sử dụng một thành phần trong ứng dụng của mình?
+<!-- Quyết định hiển thị những gì trên màn hình 
+cho người dùng là một nhiệm vụ phổ biến trong phát triển ứng dụng. 
+Nhiều lần, quyết định được đưa ra theo chương trình 
+bằng cách sử dụng các điều kiện.
 
-Thuộc tính bộ chọn của cấu hình thành phần 
-cung cấp cho bạn một tên để sử dụng khi tham 
-chiếu thành phần trong một mẫu khác. Bạn sử dụng 
-bộ chọn như thẻ HTML, ví dụ, người dùng ứng dụng sẽ là 
-<app-user /> trong mẫu.
+Để thể hiện màn hình có điều kiện trong các mẫu, 
+Angular sử dụng cú pháp mẫu @IF.
 
-Trong hoạt động này, bạn sẽ học cách soạn các thành phần. -->
+Trong hoạt động này, bạn sẽ học cách sử dụng các 
+điều kiện trong các mẫu. -->
