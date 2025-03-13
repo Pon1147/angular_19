@@ -1,17 +1,12 @@
-@if (isLoggedIn) {
-    <p>Welcom, Friend. The server is running now</p>
-} @else {
-    <p>Please log in to see the server status</p>
+@for (user of users; track user.id) {
+    <p>{{user.id}}.{{user.name}}</p> 
 }
-<!-- Control Flow in Components - @if -->
+<!-- Control Flow in Components - @for -->
 
-<!-- Quyết định hiển thị những gì trên màn hình 
-cho người dùng là một nhiệm vụ phổ biến trong phát triển ứng dụng. 
-Nhiều lần, quyết định được đưa ra theo chương trình 
-bằng cách sử dụng các điều kiện.
+<!-- QThông thường khi xây dựng các ứng dụng web, 
+ bạn cần lặp lại một số mã một số lần cụ thể - 
+ ví dụ: đưa ra một mảng tên, bạn có thể muốn hiển thị 
+ từng tên trong thẻ <p>.
 
-Để thể hiện màn hình có điều kiện trong các mẫu, 
-Angular sử dụng cú pháp mẫu @IF.
-
-Trong hoạt động này, bạn sẽ học cách sử dụng các 
-điều kiện trong các mẫu. -->
+Trong hoạt động này, bạn sẽ học cách 
+sử dụng @for để lặp lại các yếu tố trong một mẫu. -->
